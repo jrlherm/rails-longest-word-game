@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Score</h1>
+  <p><%= @start_time %></p>
+
+  <h3>The grid</h3>
+  <div class="letter-cards">
+    <% @letters.each do |letter| %>
+      <div class="letter">
+        <p class=""><%= letter %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <h3>Your answer</h3>
+  <p><%= @answer %></p>
+
+
+
+
+  <%= link_to 'Play again', new_path %>
+</div>
